@@ -9,11 +9,13 @@
 h1{
     font-size: 50px;
     display: flex;
+    margin: 0 auto; /* No se si esta bien, mirar en movil*/
     justify-content: center;
     color: #ffffff;
     background-color: #3f3f3fb7;
     margin-bottom: 110px;
     font-family:Verdana,;
+    border: 5px double rgb(92, 90, 90);
     
 }
 
