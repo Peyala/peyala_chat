@@ -12,25 +12,26 @@ h1{
     margin: 0 auto; /* No se si esta bien, mirar en movil*/
     justify-content: center;
     color: #ffffff;
-    background-color: #3f3f3fb7;
+    background-color: #191727;
     margin-bottom: 110px;
     font-family:Verdana,;
+    
     border: 5px double rgb(92, 90, 90);
     
 }
 
 body{
-    background-color: #292828;
+    background-color: #F2F2F2;
 }
 
 .iconos{
     display:flex;
     margin: 0 auto;
-    padding: 70px;
+    padding: 90px;
     margin-top: 50px;
     
     width: fit-content;
-    background-color: #3f3f3fb7;
+    background-color: #191727;
     border-radius: 30px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.3),
               0 32px 64px -48px rgba(0,0,0,1);
@@ -45,23 +46,36 @@ figure {
     height: 200px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.5),
               0 32px 64px -48px rgba(0,0,0,1);
-              
+    transition: transform 1s;
+    
+    
+
 }
 
-#izq{
-    margin-right: 60px;
-}
 
-a{
-    overflow: hidden;
+#idir_ico{
+    cursor: pointer;
+    background-color: rgb(8, 3, 29);
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background-color:  rgba(51, 51, 51, 0.63);
-    display: inline-block;
-
 }
 
+#nihel_ico{
+    cursor: pointer;
+    background-color: rgb(8, 3, 29);
+    border-radius: 50%;
+}
+
+#idir{
+    margin-left: -10%;  /*No tocar en la puta vida */
+}
+
+#nihel{
+    margin-left: 20%;   /*No tocar en la puta vida */
+}
+
+.iconos:hover .idir_ico{
+    transform: translateX(70%) scaleX(75%) scaley(75%); 
+}
 
 
 
@@ -74,4 +88,3 @@ a{
     font-weight: 300;
     
 }
-
