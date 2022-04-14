@@ -16,16 +16,21 @@
     <h1>Peyala Chat</h1>
     <section class="global">
         <section class="iconos">
-            <figure class="izq" id="idir" onclick="startAnimation()">
+            <figure class="izq" id="idir" onclick="startAnimationIdir()">
                 <img class="izq" id="idir_ico" src="img/man2.png" alt="Perfil de Idir" width="200">
                 <script src="js/scripts.js"></script>
                 <span class="caption">Idir</span>
             </figure>
-            <figure class="drch" id="nihel">
+            <figure class="drch" id="nihel" onclick="startAnimationNihel()">
                 <img class="drch" id="nihel_ico" src="img/woman2.png" alt="Perfil de Nihel" width="200">
                 <span class="caption">Nihel</span>
             </figure>
+            
         </section>
+        <form class="pass" id="pass_id" action="/action_page.php">
+            <input type="password" id="fname" name="fname">
+            <input type="submit" value="Submit">
+        </form>
     </section>
 </body>
 

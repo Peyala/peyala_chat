@@ -86,14 +86,26 @@ img.drch {                /*Icono idir*/
 }
 
 .drch{
-    transition: opacity 1s;
+    transition: opacity 0.5s, transform 2s;
     
 }
 
 .izq {
-    transition: transform 2s;
+    transition: opacity 0.5s, transform 2s;
     
 }
+
+.pass{
+    margin-left: 40%;
+    margin-bottom: 10px;
+    transition: opacity 3s, transform 1.5s;
+    transition-delay: 0.5s;
+    opacity: 0;
+    
+    width: 10px;
+    height: 10px;
+}
+
 
 
 
