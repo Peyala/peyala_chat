@@ -4,16 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Chat</title>
 </head>
+
+<style>
+    .parent{
+        padding: 50%;
+    }
+
+    div.parent {  
+        pointer-events: none;
+    }
+
+    div.child {
+        pointer-events: auto;
+    }
+
+    div.parent:hover {
+        background-color: yellow;
+    }
+
+    svg{
+        padding: 50%;
+    }
+
+    div{
+        padding: 50%;
+    }
+
+</style>
 <body>
     <h1>Chat</h1>
-    <figure  class="aver">
-        <a href="">
-            <img src="http://placekitten.com/200/200" width="200"> 
-        </a>
-    </figure>
+    <div class="parent">
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="60" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+        <div class="child" id="idir">
+            <img id="idir_ico" src="img/man2.png" alt="Perfil de Idir" width="200">
+            <span class="caption">Idir</span>
+        </div>
     
 </body>
 </html>

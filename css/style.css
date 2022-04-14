@@ -2,8 +2,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-decoration: blink;
   font-family: 'Poppins', sans-serif;
 }
 h1{
@@ -11,17 +9,19 @@ h1{
     display: flex;
     margin: 0 auto; /* No se si esta bien, mirar en movil*/
     justify-content: center;
-    color: #ffffff;
-    background-color: #191727;
-    margin-bottom: 110px;
+    color: #2c2e43;
     font-family:Verdana,;
-    
-    border: 5px double rgb(92, 90, 90);
-    
+    margin: 3%;
+    text-shadow:  
+                  1px 1px 0px #e7e7e7,
+                  2px 1px 0px #B2B1B9, 
+                  3px 2px 0px #fde680, 
+                  4px 3px 0px #052939
 }
 
 body{
     background-color: #F2F2F2;
+    overflow: hidden;
 }
 
 .iconos{
@@ -73,9 +73,39 @@ figure {
     margin-left: 20%;   /*No tocar en la puta vida */
 }
 
-.iconos:hover .idir_ico{
-    transform: translateX(70%) scaleX(75%) scaley(75%); 
+section.iconos{
+    pointer-events: none;
 }
+
+img.izq {                /*Icono idir*/
+    pointer-events: auto;
+}
+
+img.drch {                /*Icono idir*/
+    pointer-events: auto;
+}
+
+.drch{
+    transition: opacity 1s;
+    
+}
+
+.izq {
+    transition: transform 2s;
+    
+}
+
+
+
+/*
+section.iconos:hover figure.drch{
+    transform: translateX(50%);
+}
+
+section.iconos:hover figure.izq{
+    transform: translateX(50%);
+}
+*/
 
 
 
