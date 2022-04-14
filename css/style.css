@@ -96,15 +96,34 @@ img.drch {                /*Icono idir*/
 }
 
 .pass{
+    display: flex;
     margin-left: 40%;
     margin-bottom: 10px;
     transition: opacity 3s, transform 1.5s;
     transition-delay: 0.5s;
     opacity: 0;
+    padding-right: 40%;
     
-    width: 10px;
-    height: 10px;
+
 }
+
+input[type=password]{
+    width:100%;
+    border:2px solid rgb(85, 85, 85);
+    border-radius:20px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: 15px;
+  }
+  
+  input[type=password]:focus{
+    border-color:#fde680;
+    box-shadow:0 0 8px 0 #fde680;
+  }
+  
 
 
 
@@ -130,3 +149,92 @@ section.iconos:hover figure.izq{
     font-weight: 300;
     
 }
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    min-width: 50px;
+    min-height: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #052939;
+    background: #fde680;
+    background: linear-gradient(90deg, #fde680 0%, #f0dc84 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px #d3bb53;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(25px + 1px);    /*tamaño al poner encima*/
+    min-height: calc(15px + 3px);   /*tamaño al poner encima*/
+    border: 0px solid #fde680;      /*borde al puslar*/
+    box-shadow: 0 0 60px #fde680;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 10px; height: 10px;
+    border-radius: 100%;
+    border: 3px solid #fde680;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+    }
+    50%{
+        opacity: 0.75;  /*dura mas la opacidad*/
+    }
+    100% {
+      width: 65px;
+      height: 50px;
+      opacity: 0;
+    }
+  }

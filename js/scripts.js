@@ -6,7 +6,7 @@ function startAnimationIdir(){
     drch.style.transform = 'scale(0.80,0.80) translate(-85%,-20%)';
     izq.style.transform = 'scale(0.80,0.80) translate(85%,-20%)';
     pass.style.opacity = '1';
-    pass.style.transform = 'translate(0%,-450%)';
+    pass.style.transform = 'translate(0%,-250%)';
 }
 
 function startAnimationNihel(){
@@ -17,5 +17,5 @@ function startAnimationNihel(){
     izq.style.transform = 'scale(0.80,0.80) translate(85%,-20%)';
     drch.style.transform = 'scale(0.80,0.80) translate(-85%,-20%)';
     pass.style.opacity = '1';
-    pass.style.transform = 'translate(0%,-450%)';
+    pass.style.transform = 'translate(0%,-250%)';
 }

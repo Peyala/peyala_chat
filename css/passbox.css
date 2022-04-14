@@ -1,54 +1,20 @@
-input[type="text"] {
-    box-sizing: border-box;
-    width: 100%;
-    height: calc(3em + 2px);
-    margin: 0 0 1em;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1.5em;
-    background: #fff;
-    resize: none;
-    outline: none;
+input[type=password]{
+  width:100%;
+  border:2px solid rgb(85, 85, 85);
+  border-radius:20px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  font-size: 15px;
 }
-input[type="text"][required]:focus {
-    border-color: #00bafa;
+
+input[type=password]:focus{
+  border-color:#fde680;
+  box-shadow:0 0 8px 0 #fde680;
 }
-input[type="text"][required]:focus + label[placeholder]:before {
-    color: #00bafa;
-}
-input[type="text"][required]:focus + label[placeholder]:before, input[type="text"][required]:valid + label[placeholder]:before {
-    transition-duration: .2s;
-    transform: translate(0,-1.5em) scale(.9,.9);
-}
-input[type="text"][required]:invalid + label[placeholder][alt]:before {
-    content: attr(alt);
-}
-input[type="text"][required] + label[placeholder] {
-    display: block;
-    pointer-events: none;
-    line-height: 1.25em;
-    margin-top: calc(-3em - 2px);
-    margin-bottom: calc((3em - 1em) + 2px);
-}
-input[type="text"][required] + label[placeholder]:before {
-    content: attr(placeholder);
-    display: inline-block;
-    margin: 0 calc(1em + 2px);
-    padding: 0 2px;
-    color: #898989;
-    white-space: nowrap;
-    transition: .3s ease-in-out;
-    background-image: linear-gradient(to bottom,#fff,#fff);
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-html {
-    height: 100%;
-}
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+
+body{
+  background-color: rgb(26, 26, 26);
 }
