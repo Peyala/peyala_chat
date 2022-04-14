@@ -103,7 +103,6 @@ img.drch {                /*Icono idir*/
     transition: opacity 3s, transform 1.5s;
     transition-delay: 0.5s;
     opacity: 0;
-    
     justify-content: center;
 
 }
@@ -124,6 +123,7 @@ input[type=password]{
     box-sizing:border-box;
     transition:.3s;
     font-size: 15px;
+    cursor: default;
   }
   
   input[type=password]:focus{
@@ -162,9 +162,9 @@ section.iconos:hover figure.izq{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .button {
+.button {
     min-width: 100px;
     min-height: 30px;
     font-family: 'Nunito', sans-serif;
@@ -189,7 +189,7 @@ section.iconos:hover figure.izq{
 }
   
   button::before {
-  content: '';
+    content: '';
     border-radius: 1000px;
     min-width: calc(25px + 1px);    /*tamaño al poner encima*/
     min-height: calc(15px + 3px);   /*tamaño al poner encima*/
@@ -215,7 +215,7 @@ section.iconos:hover figure.izq{
     content: '';
     width: 10px; height: 10px;
     border-radius: 100%;
-    border: 3px solid #fde680;
+    border: 2.5px solid #ffd723ab;
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -234,13 +234,17 @@ section.iconos:hover figure.izq{
       width: 20px;
       height: 20px;
       opacity: 1;
+      border-radius: 1000px;
     }
     50%{
         opacity: 0.75;  /*dura mas la opacidad*/
     }
     100% {
-      width: 110px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       opacity: 0;
     }
+  }
+  .ola{
+    margin-bottom: 455px;
   }
