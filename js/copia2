@@ -17,7 +17,6 @@ function startAnimationIdir(){
     drch.style.cursor = 'default';
     izq.style.cursor = 'default';
     input.style.cursor = 'text';
-    btn.style.cursor = 'pointer';
     input.disabled = false;
     btn.disabled = false;
     idir_done = true;
@@ -39,7 +38,6 @@ function startAnimationNihel(){
     drch.style.cursor = 'default';
     izq.style.cursor = 'default';
     input.style.cursor = 'text';
-    btn.style.cursor = 'pointer';
     input.disabled = false;
     btn.disabled = false;
     nihel_done = true;

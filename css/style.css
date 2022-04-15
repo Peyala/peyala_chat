@@ -127,11 +127,12 @@ input[type=password]{
     transition:.3s;
     font-size: 15px;
     cursor: default;
-    /*
+  }
+
+  .input_class{
     animation-name: shake, glow-red;
     animation-duration: 0.7s, 0.35s;
     animation-iteration-count: 1, 2;
-    */
   }
   
   input[type=password]:focus{

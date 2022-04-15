@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="css/passbox.css">
-    <script src="less.js" type="text/javascript"></script>
 </head>
 
 <body>
