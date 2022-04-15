@@ -1,5 +1,5 @@
-let idir_done = new Boolean(false);
-var nihel_done = new Boolean(false);
+let idir_done = false;
+var nihel_done = false;
 
 function startAnimationIdir(){
     console.log(idir_done);
@@ -17,9 +17,11 @@ function startAnimationIdir(){
     drch.style.cursor = 'default';
     izq.style.cursor = 'default';
     input.style.cursor = 'text';
+    btn.style.cursor = 'pointer';
     input.disabled = false;
     btn.disabled = false;
     idir_done = true;
+    console.log("hola");
     
 }
 
@@ -38,6 +40,7 @@ function startAnimationNihel(){
     drch.style.cursor = 'default';
     izq.style.cursor = 'default';
     input.style.cursor = 'text';
+    btn.style.cursor = 'pointer';
     input.disabled = false;
     btn.disabled = false;
     nihel_done = true;

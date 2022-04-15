@@ -15,19 +15,16 @@
 <body>
 
 
-    <section class="waves">
-    <div class="wave wave1" ></div>
-    <div class="wave wave2" ></div>
-    <div class="wave wave3" ></div>
-    <div class="wave wave4" ></div>
-</section>
+    <div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
 
     <h1>Peyala Chat</h1>
     <section class="global">
         <section class="iconos">
             <figure class="izq" id="idir" onclick="startAnimationIdir()">
                 <img class="izq" id="idir_ico" src="img/man2.png" alt="Perfil de Idir" width="200">
-                <script src="js/scripts.js"></script>
                 <span class="caption">Idir</span>
             </figure>
             <figure class="drch" id="nihel" onclick="startAnimationNihel()">
@@ -37,12 +34,13 @@
             
         </section>
         <form class="pass" id="pass_id" action="">
-            <input type="password" placeholder="Contraseña">
+            <input id="input_box" disabled required type="password" placeholder="Contraseña">
             <div class="wrap">
-                <button class="button">LOGIN</button>
+                <button id="login_btn" disabled class="button">LOGIN</button>
             </div>
         </form>
     </section>
 </body>
-
+<script src="js/scripts.js"></script>
+<script src="js/login.js"></script>
 </html>

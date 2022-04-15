@@ -20,8 +20,8 @@ h1{
 }
 
 body{
-    background-color: #F2F2F2;
-    background-image: url(../img/blob.svg);
+    background-color: #ffffff;
+    background-image: url(../img/prueba.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden;
@@ -127,11 +127,35 @@ input[type=password]{
     transition:.3s;
     font-size: 15px;
     cursor: default;
+    /*
+    animation-name: shake, glow-red;
+    animation-duration: 0.7s, 0.35s;
+    animation-iteration-count: 1, 2;
+    */
   }
   
   input[type=password]:focus{
     border-color:#fde680;
     box-shadow:0 0 8px 0 #fde680;
+  }
+
+  @keyframes shake {
+    0%, 20%, 40%, 60%, 80% {
+      transform: translateX(8px);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-8px);
+    }
+  }
+  
+  @keyframes glow-red {
+    50% {
+      border-color: indianred;
+    }
   }
   
 
@@ -182,7 +206,7 @@ section.iconos:hover figure.izq{
     border-radius: 1000px;
     box-shadow: 0px 2px 12px #d3bb53;
     transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
+    cursor: default;
     outline: none;
     position: relative;
     padding: 10px;
@@ -249,66 +273,46 @@ section.iconos:hover figure.izq{
     }
   }
 
-
-  .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  .ocean { 
+    height: 5%;
     width:100%;
-    height: 100px;
-    background: url(../img/wave.png);
-    background-size: 1000px 100px;
-    z-index: -1;
-
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #2C2E43;
+    z-index:-1;
   }
-
-  .wave1{
-    animation: animate 30s linear infinite;
-   
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
-  }
-
-  @keyframes animate{
-    0%{
-      background-position-x: 0;
-    }
-    100%{
-      background-position-x: 1000px;
-    }
-  }
-
-  .wave2{
-    animation: animate2 15s linear infinite;
-    
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
-  }
-
-  @keyframes animate2{
-    0%{
-      background-position-x: 0;
-    }
-    100%{
-      background-position-x: -1000px;
-    }
-  }
-
-  .wave3{
-    animation: animate 15s linear infinite;
-   
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15;
-  }
-
-  .wave4{
-    animation: animate 15s linear infinite;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20;
-  }
-
   
+  .wave {
+    background: url(../img/wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-25px,0);
+    }
+    50% {
+      transform: translate3d(0,5px,0);
+    }
+  }
