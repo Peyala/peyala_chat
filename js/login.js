@@ -29,8 +29,8 @@ login_btn.onclick = ()=>{
                     setTimeout(function(){
                         $(input).addClass("input_class");
                     })
-                    
-                    
+                    input.value = '';
+                    console.log("addfsdfsf");                 
                 }
             }
         }

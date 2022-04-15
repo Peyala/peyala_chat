@@ -97,6 +97,13 @@ img.drch {                /*Icono idir*/
 
 .izq {
     transition: opacity 0.5s, transform 2s;
+}
+
+section.iconos:hover figure.drch{
+    
+}
+
+section.iconos:hover figure.izq{
     
 }
 
@@ -131,8 +138,8 @@ input[type=password]{
 
   .input_class{
     animation-name: shake, glow-red;
-    animation-duration: 0.7s, 0.35s;
-    animation-iteration-count: 1, 2;
+    animation-duration: 0.99s, 0.33s;
+    animation-iteration-count: 1, 3;
   }
   
   input[type=password]:focus{
@@ -142,14 +149,14 @@ input[type=password]{
 
   @keyframes shake {
     0%, 20%, 40%, 60%, 80% {
-      transform: translateX(8px);
+      transform: translateX(3px);
     }
     10%,
     30%,
     50%,
     70%,
     90% {
-      transform: translateX(-8px);
+      transform: translateX(-3px);
     }
   }
   
@@ -163,15 +170,7 @@ input[type=password]{
 
 
 
-/*
-section.iconos:hover figure.drch{
-    transform: translateX(50%);
-}
 
-section.iconos:hover figure.izq{
-    transform: translateX(50%);
-}
-*/
 
 
 
@@ -230,7 +229,7 @@ section.iconos:hover figure.izq{
     transition: all .3s ease-in-out 0s;
   }
   
-  .button:hover, .button:focus {
+  .button:hover, .button:hover {
     color: #313133;
     transform: translateY(-6px);
   }
