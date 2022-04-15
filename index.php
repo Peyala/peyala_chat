@@ -20,7 +20,7 @@
   <div class="wave"></div>
   <div class="wave"></div>
 </div>
-
+    
     <h1>Peyala Chat</h1>
     <section class="global">
         <section class="iconos">
@@ -32,10 +32,9 @@
                 <img class="drch" id="nihel_ico" src="img/woman2.png" alt="Perfil de Nihel" width="200">
                 <span class="caption">Nihel</span>
             </figure>
-            
         </section>
         <form class="pass" id="pass_id" action="#">
-            <input class="input_class" id="input_box" name="password" disabled required type="password" placeholder="Contraseña">
+            <input class="input_class" id="input_box" name="password" disabled required type="password" placeholder="Password">
             <div class="wrap">
                 <button id="login_btn" disabled class="button">LOGIN</button>
             </div>
